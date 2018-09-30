@@ -1,13 +1,18 @@
 //This is when the page is opened what will show is the entire employee list as current:
 const render = function () {
     $('.content').empty();
-
     for (let i = 0; i < employeeList.length; i++) {
         $('.content').append(`<div class="employee-card">${employeeList[i].name}<br/><br/>${employeeList[i].officeNum}<br/><br/>${employeeList[i].phoneNum} </div>`);
     }
 }
+render();
 //When the view button is clicked,it will render the full list: 
-$('#view').on('click', render);
+const showView= function(){
+    $('#addContact').addClass('hide');
+    $('.content').removeClass('hide');
+    $('#verifyBox').addClass('hide');
+}
+$('#view').on('click', showView);
 
 // An Add option that allows users to input name, office number, and phone number and then renders the updated employee list.
 
@@ -54,3 +59,4 @@ $('#verifyInput').val('');
 }
 
 $('#magnifyButtonVerify').on('click', verifyInclude);
+
