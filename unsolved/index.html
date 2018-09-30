@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Phonebook</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navcontainer">
+    <i class="far fa-address-book fa-2x"></i>
+    <div class="navbuttons"id="view">VIEW</div>
+    <div class="navbuttons"id="add">ADD</div>
+    <div class="navbuttons"id="verify">VERIFY</div>
+    <div class="navbuttons update">UPDATE</div>
+    <div class="navbuttons delete">DELETE</div>
+  </div>
+  <div class="alleverything">
+  <div id="addContact"class="hide">
+    <input id="addName">
+    <input id="addOfficeNum">
+    <input id="addPhoneNum">
+    <button id="magnifyButton"><i class="fas fa-search"></i></button>
+  </div>
+  <div id="verifyBox"class="hide">
+      <input id="verifyInput">
+      <button id="magnifyButtonVerify"><i class="fas fa-search"></i></button>
+    </div>
+  <div id="verifyWord"class="hide"><p>YES!</p></div>
+  <div class="content">
+  </div>
+  </div>
+
+
+
+
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

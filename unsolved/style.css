@@ -1,0 +1,83 @@
+.navcontainer{
+    background: #4B4746;
+    color:white;
+    float: left;
+    width:10%;
+    text-align: center;
+    height: -webkit-fill-available;
+    margin: 0 auto;
+
+}
+i{
+    margin-top:30%;
+    size: 20px;
+}
+
+.navbuttons{
+    margin-top:10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+}
+
+.employee-card {
+    border: 1px solid #777777;
+    padding: 10px;
+    width: 40%;
+    margin-left: 200px;
+    margin-bottom:10px;
+}
+.alleverything{
+    padding-top: 10px;
+}
+.content{
+    padding-top: 10px;
+}
+
+#addContact{
+    margin-left: 350px;
+
+}
+
+#addName {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#addOfficeNum {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#addPhoneNum{
+    width: 200px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#magnifyButton{
+    border: 1px solid #777777;
+}
+
+#verifyBox{
+    margin-left:350px;
+}
+#verifyInput{
+    width:200px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#magnifyButtonVerify{
+    border: 1px solid #777777;
+}
+
+/*------------------------
+    HIDE CLASS
+---------------------------*/
+
+.hide {
+    display: none;
+  }
+  
