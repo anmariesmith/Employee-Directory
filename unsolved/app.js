@@ -69,13 +69,15 @@ const verifyInclude = function () {
     for (let i = 0; i < employeeList.length; i++) {
         if (employeeList[i].name === verifyName) {
             $('#verifyWord').removeClass('hide');
-            $('verifyWord2').addClass('hide');
-        } else
+            $('#verifyWord2').addClass('hide');
+            return;
+        } else {
             $('#verifyWord2').removeClass('hide');
-        $('verifyWord').addClass('hide');
+            $('#verifyWord').addClass('hide');
+        }
     };
     $('#verifyInput').val('');
-};
+}
 
 $('#magnifyButtonVerify').on('click', verifyInclude);
 
@@ -91,20 +93,27 @@ const showUpdate = function () {
 }
 $('#update').on('click', showUpdate);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const updateThis = function(){
+    const nameMatch = $('#updateName').val();
+    const officeNumUpdate= $('#updateOfficeNum').val();
+    const phoneNumUpdate = $('#updatePhoneNum').val();
+    for (let i= 0; i< employeeList.length; i++){
+        if (employeeList[i].name === nameMatch) {
+            employeeList.officeNum= officeNumUpdate;
+            $('#updateName').val('');
+            $('#updateOfficeNum').val('');
+            $('#updatePhoneNum').val('');
+            return;
+        } else {
+        console.log('name not matched bitch');
+        $('#updateName').val('');
+        $('#updateOfficeNum').val('');
+        $('#updatePhoneNum').val('');
+        }
+    };
+    render();
+}
+$('#magnifyButtonUpdate').on('click', updateThis);
 
 // This will show the "Delete bar when clicked on Delete"
 const showDel = function () {
@@ -123,12 +132,12 @@ $('#delete').on('click', showDel);
 const deleteThis = function () {
     const nameDel = $('#delName').val();
     for (let i = 0; i < employeeList.length; i++) {
-        if (employeeList[i].name == nameDel) {
-            delete employeeList.name.nameDel;
-        $('#delName').val('');
-    } else
-    $('#delName').val('');
-}
-render();
+        if (employeeList[i].name === nameDel) {
+            employeeList.splice(i,1);
+            $('#delName').val('');
+        } else
+            $('#delName').val('');
+    }
+    render();
 };
 $('#magnifyButtonDelete').on('click', deleteThis);
