@@ -32,26 +32,26 @@ i{
 .content{
     padding-top: 10px;
 }
-
+/* ADD CONTACT INPUT BAR AND BUTTON */
 #addContact{
     margin-left: 350px;
 
 }
 
 #addName {
-    width: 200px;
+    width: 250px;
     height: 22px;
     border: 1px solid #777777;
 }
 
 #addOfficeNum {
-    width: 200px;
+    width: 250px;
     height: 22px;
     border: 1px solid #777777;
 }
 
 #addPhoneNum{
-    width: 200px;
+    width: 250px;
     height: 22px;
     border: 1px solid #777777;
 }
@@ -72,6 +72,53 @@ i{
 #magnifyButtonVerify{
     border: 1px solid #777777;
 }
+
+/* UPDATE CONTACT INPUT BAR AND BUTTON */
+#updateContact{
+    margin-left: 350px;
+
+}
+
+#updateName {
+    width: 250px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#updateOfficeNum {
+    width: 250px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#updatePhoneNum{
+    width: 250px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#magnifyButtonUpdate{
+    border: 1px solid #777777;
+}
+
+
+
+/* DELETTE CONTACT INPUT BAR AND BUTTON  */
+#deleteContact{
+    margin-left: 350px;
+
+}
+
+#delName {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #777777;
+}
+
+#magnifyButtonDelete{
+    border: 1px solid #777777;
+}
+
 
 /*------------------------
     HIDE CLASS

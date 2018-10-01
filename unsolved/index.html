@@ -19,21 +19,37 @@
     <div class="navbuttons"id="view">VIEW</div>
     <div class="navbuttons"id="add">ADD</div>
     <div class="navbuttons"id="verify">VERIFY</div>
-    <div class="navbuttons update">UPDATE</div>
-    <div class="navbuttons delete">DELETE</div>
+    <div class="navbuttons" id="update">UPDATE</div>
+    <div class="navbuttons" id="delete">DELETE</div>
   </div>
   <div class="alleverything">
+    <!-- ADD BUTTON AND INPUT FIELDS -->
   <div id="addContact"class="hide">
-    <input id="addName">
-    <input id="addOfficeNum">
-    <input id="addPhoneNum">
+    <input id="addName"placeholder="Please enter name">
+    <input id="addOfficeNum"placeholder="Please enter office number">
+    <input id="addPhoneNum"placeholder="Please enter phone number (###-###-#####)">
     <button id="magnifyButton"><i class="fas fa-search"></i></button>
   </div>
+  <!-- VERIFY BUTTON , INPUT AND RETURN FIELDS -->
   <div id="verifyBox"class="hide">
-      <input id="verifyInput">
+      <input id="verifyInput" placeholder="Please enter the name of the contact">
       <button id="magnifyButtonVerify"><i class="fas fa-search"></i></button>
     </div>
   <div id="verifyWord"class="hide"><p>YES!</p></div>
+  <div id="verifyWord2"class="hide"><p>nah fam</p></div>
+  
+<!-- UPDATE BUTTON AND INPUT FIELDS -->
+  <div id="updateContact"class="hide">
+      <input id="updateName"placeholder="Please enter name">
+      <input id="updateOfficeNum"placeholder="Please enter office number">
+      <input id="updatePhoneNum"placeholder="Please enter phone number (###-###-#####)">
+      <button id="magnifyButtonUpdate"><i class="fas fa-search"></i></button>
+    </div>
+<!-- DELETE BUTTON AND INPUT FIELDS -->
+<div id="deleteContact"class="hide">
+    <input id="delName"placeholder="please enter name">
+    <button id="magnifyButtonDelete"><i class="fas fa-search"></i></button>
+  </div>
   <div class="content">
   </div>
   </div>
