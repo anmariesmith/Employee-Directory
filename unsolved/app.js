@@ -95,17 +95,16 @@ $('#update').on('click', showUpdate);
 
 const updateThis = function(){
     const nameMatch = $('#updateName').val();
-    const officeNumUpdate= $('#updateOfficeNum').val();
+    const officeNumUpdate = $('#updateOfficeNum').val();
     const phoneNumUpdate = $('#updatePhoneNum').val();
     for (let i= 0; i< employeeList.length; i++){
         if (employeeList[i].name === nameMatch) {
-            employeeList.officeNum= officeNumUpdate;
+            employeeList[i].officeNum = officeNumUpdate;
+            employeeList[i].phoneNum= phoneNumUpdate;
             $('#updateName').val('');
             $('#updateOfficeNum').val('');
             $('#updatePhoneNum').val('');
-            return;
         } else {
-        console.log('name not matched bitch');
         $('#updateName').val('');
         $('#updateOfficeNum').val('');
         $('#updatePhoneNum').val('');
