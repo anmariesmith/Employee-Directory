@@ -102,10 +102,18 @@ i{
     border: 1px solid #777777;
 }
 
-.verifyBox{
-    margin-left: 400px;
-}
+/* VERIFY CONTACT BOX */
 
+#verifyWord{
+    margin-left: 15%;
+    margin-top: 20px;
+
+}
+#verifyWord2{
+    margin-left: 15%;
+    margin-top: 20px;
+
+}
 
 
 /* DELETTE CONTACT INPUT BAR AND BUTTON  */
