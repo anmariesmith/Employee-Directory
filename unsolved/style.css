@@ -6,6 +6,7 @@
     text-align: center;
     height: -webkit-fill-available;
     margin: 0 auto;
+    position: fixed;
 
 }
 i{
