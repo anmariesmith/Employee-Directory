@@ -1,5 +1,7 @@
 # Employee-Directory
 
+Github Pages: https://anmariesmith.github.io/Employee-Directory/
+Github Repo: https://github.com/anmariesmith/Employee-Directory/
 
 While in class, we needed to build an employee directory that would add a new contact, delete a contact, verify a name on the contact list, and update a current contact all while dynamically updating the page in a single page application format. 
 
